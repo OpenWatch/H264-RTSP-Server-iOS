@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--Encoder Demo View Controller-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="EncoderDemoViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DdC-9V-B2a">
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Server Address" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EOB-Rd-ssE">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="251" type="user" id="ynH-Ec-om0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="DdC-9V-B2a" firstAttribute="top" relation="greaterThanOrEqual" secondItem="3" secondAttribute="top" constant="62" type="user" id="9VS-Rd-suJ"/>
+                            <constraint firstAttribute="trailing" secondItem="DdC-9V-B2a" secondAttribute="trailing" constant="30" id="TyH-ts-tqM"/>
+                            <constraint firstAttribute="bottom" secondItem="DdC-9V-B2a" secondAttribute="bottom" constant="37" id="d4K-M0-pTB"/>
+                            <constraint firstItem="DdC-9V-B2a" firstAttribute="top" secondItem="3" secondAttribute="top" constant="62" id="rFH-kM-wMy"/>
+                            <constraint firstItem="EOB-Rd-ssE" firstAttribute="leading" secondItem="DdC-9V-B2a" secondAttribute="leading" type="user" id="vLg-s4-r1r"/>
+                            <constraint firstItem="EOB-Rd-ssE" firstAttribute="top" secondItem="3" secondAttribute="top" constant="20" symbolic="YES" type="default" id="z7F-pt-M7V"/>
+                            <constraint firstItem="DdC-9V-B2a" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="35" type="user" id="zG9-mD-q9G"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cameraView" destination="DdC-9V-B2a" id="uAZ-fL-DvZ"/>
+                        <outlet property="serverAddress" destination="EOB-Rd-ssE" id="kAG-Y0-kN5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="142" y="84"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
